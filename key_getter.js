@@ -38,9 +38,10 @@ function sleep(delay) {
 
 	await page.waitForSelector('#ack-risk')
 	await page.click('#ack-risk')
-
+	
 	await page.click('#iam-app-my-credentials-page > div > div > div > div > main > div > div:nth-child(3) > div > div > div > div > div > div > div > div.awsui_root_1i0s3_uqbt5_93.awsui_form-component_1xupv_1yj7o_334 > div.awsui_footer_1i0s3_uqbt5_118 > div > div > div > div > div:nth-child(2) > button > span')
-    
+
+	sleep(3000)
 	
 	const accessKeyElement = await page.$('#iam-app-my-credentials-page > div > div > div > div > main > div > div:nth-child(3) > div > div > div > div > div > div > div > div.awsui_root_1i0s3_uqbt5_93.awsui_form-component_1xupv_1yj7o_334 > div.awsui_content_1i0s3_uqbt5_110 > div > div > div > div.awsui_root_18wu0_1ea4b_93.awsui_box_18wu0_1ea4b_207.awsui_m-bottom-m_18wu0_1ea4b_880.awsui_color-default_18wu0_1ea4b_207.awsui_font-size-default_18wu0_1ea4b_223.awsui_font-weight-default_18wu0_1ea4b_263 > div > div.awsui_content_14iqq_1buwd_282 > div.awsui_wrapper_wih1l_5nk4n_154.awsui_variant-container_wih1l_5nk4n_163.awsui_has-header_wih1l_5nk4n_170 > table > tbody > tr > td:nth-child(1) > div > div:nth-child(2) > span');
     	await page.click('#iam-app-my-credentials-page > div > div > div > div > main > div > div:nth-child(3) > div > div > div > div > div > div > div > div.awsui_root_1i0s3_uqbt5_93.awsui_form-component_1xupv_1yj7o_334 > div.awsui_content_1i0s3_uqbt5_110 > div > div > div > div.awsui_root_18wu0_1ea4b_93.awsui_box_18wu0_1ea4b_207.awsui_m-bottom-m_18wu0_1ea4b_880.awsui_color-default_18wu0_1ea4b_207.awsui_font-size-default_18wu0_1ea4b_223.awsui_font-weight-default_18wu0_1ea4b_263 > div > div.awsui_content_14iqq_1buwd_282 > div.awsui_wrapper_wih1l_5nk4n_154.awsui_variant-container_wih1l_5nk4n_163.awsui_has-header_wih1l_5nk4n_170 > table > tbody > tr > td:nth-child(2) > div > div:nth-child(2) > div > div:nth-child(2) > a > strong')
